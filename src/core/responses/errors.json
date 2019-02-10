@@ -1,0 +1,7 @@
+{
+  "not_found": "Not found.",
+  "unauthorized": "Unauthorized.",
+  "invalid_request": "Invalid request.",
+  "invalid_language": "Language not supported.",
+  "internal_error": "Internal server error."
+}

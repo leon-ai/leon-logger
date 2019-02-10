@@ -1,0 +1,11 @@
+.idea/
+.yarn/
+node_modules/
+dist/
+db/*
+!db/.gitkeep
+
+.DS_STORE
+debug.log
+npm-debug.log
+.env

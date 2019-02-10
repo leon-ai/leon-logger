@@ -1,0 +1,31 @@
+{
+  "name": "leon-logger",
+  "version": "1.0.0",
+  "description": "The collaborative logger for the Léon personal assistant",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon ./src/index.js --ignore db --exec babel-node",
+    "delete-dist": "shx rm -rf ./dist",
+    "build": "npm run delete-dist && babel ./src -d ./dist && shx cp -r ./src/core/responses ./dist/core/responses",
+    "serve": "NODE_ENV=production node --require dotenv/config ./dist/index.js"
+  },
+  "author": {
+    "name": "Louis Grenard",
+    "email": "louis.grenard@gmail.com",
+    "url": "https://twitter.com/louistiti_fr"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "helmet": "^3.11.0",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.18.9",
+    "shx": "^0.2.2"
+  }
+}
