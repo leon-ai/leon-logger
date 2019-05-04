@@ -73,6 +73,7 @@ export default class Server {
               l: lang,
               p: classification.package,
               m: classification.module,
+              a: classification.action,
               c: classification.confidence,
             };
             const obj = {
